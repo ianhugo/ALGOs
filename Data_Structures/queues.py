@@ -48,7 +48,7 @@ class Node:
         self.previous = None
 
 
-class Queue:
+class LinkedList1:
     def __init__(self):
         self.length = 0
         self.head = None
@@ -73,7 +73,7 @@ class Queue:
         return item
 
 
-class Queue1:
+class LinkedList2:
     def __init__(self, length):
         """a queue of at most n elements using an array of n+1 element size"""
         self.length = length
