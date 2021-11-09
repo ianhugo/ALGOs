@@ -126,7 +126,7 @@ class Suffix_Array:
 
     """
     Kasai algo to build LCP
-    
+
     https://www.coursera.org/lecture/algorithms-on-strings/computing-the-lcp-array-HyUlH
     start by comparing suffix_array[0] and suffix_array[1]
     get their LCP
@@ -137,6 +137,9 @@ class Suffix_Array:
     repeat until LCP full
     each iteration, length of LCP decrease by at most 1
     (as we only cut away one)
+
+    why it works:
+    next in the string, is longer than the suffix_array[1]
 
     this is done in O(n)
     why? because of bounds on length of prefix and 

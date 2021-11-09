@@ -1,0 +1,59 @@
+Algorithms set developers apart
+Algorithms are everywhere.
+
+Algorithms are a specific set of clearly
+defined instructions
+aimed to carry out a task or process (fast)
+
+Algorithms involve
+creative, elegant ways to implement a solution
+creative and efficient use of data structures
+
+Algorithms allow one to peek
+under the hood of SQL and Linux commands
+
+Algorithms are about performance
+an algorithm is a technology
+
+Algorithms are
+compact and simple pieces of logic, 
+working perfectly to perform a single task
+
+Donald Knuth:
+father of analysis of algorithms
+“People who analyze algorithms have double happiness. 
+First of all they experience the sheer beauty of elegant 
+mathematical patterns that surround computational procedures. 
+Then they receive a practical payoff when their theories make 
+it possible to get other jobs done more quickly and economically.”
+
+LESSONS from the field:
+- always reclarify the problem
+- work with a few examples
+- note down the different goals/milestones
+- try a brute force
+- plan out functions before implement
+- anchor problems in patterns (confidence)
+- have structure to thinking
+
+Observation 1:
+An approach might not work completely
+But that does not mean abandon immediately
+It might be a half way solution
+Note down what it solves
+Note down what it is lacking
+Breaking down problems into smaller ones
+
+Observation 2: (esp DP)
+Try to reduce outcomes into cases
+Where other cases collapse to these cases
+Draw a line in the sand then adjust
+
+Observation 3:
+have multiple thoughts
+sketch out what happens
+why it would or won't work
+what is missing
+
+Observation 4:
+What are the implications/corollories of this result?
