@@ -1,0 +1,56 @@
+STRINGS
+https://www.byte-by-byte.com/strings/
+
+- a primitive type of an Object
+- mutable
+- immutable
+
+- composed of seq of characters
+- characters = ASCII or Unicode (depend on encoding)
+- ASCII = 256 characters
+- ASCII can be represented by a single byte
+
+Unicode
+- UTF-8, UTF-16, UTF-32
+- larger, more generalized
+- specifies number of bits per character
+
+Python Strings
+- immutable
+- primitive
+- comparison
+- access by index
+
+Useful:
+- index(s1) = index of s1 in string
+- list(s1) = convert into char array
+----------
+Useful Patterns/tools
+
+1: Length-256 Integer Array
+- counting char occurence in string
+- index in array = ASCII value of character
+- value at index = count of the character
+
+Example: "aaabb"
+arr[97] = 3
+arr[98] = 2
+
+
+2: 2 Pointers
+- find substrings (nested for loop with two pointers)
+- find combination of starting, ending
+- reverse string in place
+
+NOTE: convert into char array
+= easier to swap character (immutable strings)
+= list(str1)
+
+
+3: String Math
+- convert between strings and integers
+- convert between char and ASCII values
+
+ord(str1) = ASCII/unicode
+chr(unicode) = char/str_int
+

@@ -2,6 +2,8 @@
 
 """
 length of cycle
+O(n) time
+O(1) space
 """
 class Node:
     def __init__(self, value, next=None):
@@ -55,6 +57,8 @@ SO:
 start from head pointer
 start from intersection pointer
 
+O(n) time
+O(1) space
 """
 
 class Solution(object):
@@ -101,6 +105,9 @@ start 2 pointers at head
 move 1 pointer ahead by length
 keep incrementing until they meet
 they will meet at cycle entrance
+
+O(n) time
+O(1) space
 """
 
 from __future__ import print_function

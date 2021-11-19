@@ -35,6 +35,7 @@ LESSONS from the field:
 - plan out functions before implement
 - anchor problems in patterns (confidence)
 - have structure to thinking
+- sorted input?
 
 Observation 1:
 An approach might not work completely
@@ -57,3 +58,98 @@ what is missing
 
 Observation 4:
 What are the implications/corollories of this result?
+
+Observation 5:
+Clean up after hacking
+Be sure to think of edge cases!
+
+Observation 6:
+Approach it with mathematical thinking
+Play and engage with the problem to start
+Make useful observations
+Entry -> Specializing -> Attack -> Generalizing -> Reviewing
+
+Observation 7: 
+Simplify cases with max-ing, min-ing
+
+Observation 8:
+If need sorting or preprocessing
+Using a data struct might be "free"
+
+Observation 9:
+don't compromise accuracy/logic of solution
+for faster time and smaller space
+
+Observation 10 Merge Intervals:
+- use minheap to do sorting of one layer (one subset of things) (sorting time smaller) (heap cheese)
+- abstract the characteristic of the gap: between current_end, next_start
+
+Observation 11 Cyclic Sort:
+Cyclic sort movement through array, if duplicate, creates a cycle
+as go to same "correct" position more than once
+
+Observation 12 Cyclic Sort:
+Can skip over negatives, and skip over numbers larger than length
+
+Observation 13:
+Having recognized a potential pattern
+It still might not fit the cookie mould
+Might have to preprocess to fit the pattern
+Skip over things, change things and such
+
+Observation 14: dirty hacky solution
+If O(1) space, but need a hash map
+Use a "hash_str" with n zeros
+"00000"
+"10000" index 0 is present
+
+Observation 15 Cyclic Sort:
+If don't want to modify
+Iterate over array, when meet number
+mark presence of a number, by changing its relevant index to -ve
+Iterate again to find missing numbers, where elements are positive
+
+Observation 16:
+Know to modulus stuff when iterations will cycle in some way
+
+Observation 17 Recursion:
+State base cases, situations to return
+at each level, do preprocessing, then pass down
+When pass down, note if need to change values
+hit base level, recursion unwinds
+at each level, do post processing, then pass up
+Unwinding = chain of returns
+
+Observation 18 Recursion:
+The function is self spawning little minions/workers
+Each with the same logic
+Each looking for the base case
+Each explores a level
+if not base case, spawn more minions
+then when find base case, recurse backwards
+
+Observation 18.1 Recursion 2:
+What is done to pre-process? What to check? What action to take?
+What the next locations to check are? What recursive calls?
+What is passed down? What values? What containers? 
+How do recursive calls relate? One after another? Take stat measure of results? 
+
+Observation 19 Heaps in Python:
+- python heapq is a minheap
+- so if want maxheap, push in negatives
+
+Observation 20 Subset pattern:
+- take note of what choice needs to be made at each level
+- permutation = place at each position . . .
+- do some examples
+
+Observation 21 Subset pattern:
+- there are two patterns
+- 1: make a copy of everything, apply changes to a copy of it
+    - number of items have doubled
+- 2: apply changes to all of them, where possible]
+
+Observation 22 Subset pattern:
+- apply changes based on condition
+- apply different types of changes
+- apply each change to all last states

@@ -1,0 +1,73 @@
+Recursive, Recursion, Recurring
+https://www.youtube.com/watch?v=B3U6LExgevE
+https://www.byte-by-byte.com/recursion/
+
+- A function that calls itself
+- has a base case, when we are done
+- has recursive step, function calls itself
+- walk through the code to understand it
+- Fan out, Fan in
+
+1: Order of Operations
+2: Recursive Tree
+3: Shared Variables
+
+(!: write things down)
+
+1: Order of Operations
+- We need the answer to this f(n)
+- To get that answer, we need to answer f(x) and f(y) and so on
+- Turn these function calls into values
+- do something before smaller? do something after?
+
+Observation:
+- break problems down into easier base cases
+- sketch out causality chain of solutions
+- similar to proof by induction
+
+2: Recursive Tree
+- Recursion starts with one call
+- It spawns more calls
+- That spawns more calls
+- Until it hit base case
+- Then it unwinds upwards
+- Nodes = a function call
+- Edges = variables passed down, results passed up
+
+Observation:
+- what result is needed?
+- what common function/operation is happening
+- what variables are being carried over?
+- what differences/decisions/variations are being considered 
+    where we have to split paths?
+    (exclude/include)
+    (smaller/bigger)
+    (even/odd)
+
+3: Shared Variables
+- a: passed variable: update as we go
+- b: build result as we return
+    - doing the work in reverse order
+    - return partial values, from recursive calls
+
+
+BACKTRACKING:
+- retrace steps backwards
+- try different paths
+- like DFS
+
+TIME COMPLEXITY:
+- O( number of recursive calls * work per recursive call)
+- #recursive calls = height of tree & branching factor
+- height of tree = how does the input break down (halves? decrement?)
+- branching factor = max number of child nodes
+
+number of nodes = O(branching_factor^depth of recursion)
+time complexity = O(number of nodes * work_per_call)
+
+
+SPACE COMPLEXITY:
+- depend on height, amount of space used per call
+- O(depth of recursion * space_per_recursive_call)
+
+(replace call to iterative, to call to recursive)

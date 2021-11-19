@@ -1,0 +1,83 @@
+Recursive, Recursion, Recurring
+https://www.youtube.com/watch?v=BibDrTCGXRM
+
+(powerful tool to break problems down)
+solve problems by breaking down into subproblems
+
+A pattern provides a framework
+Patterns overlap extensively
+(find a pattern/framework that works for you)
+Each pattern is a specific application of recursive principles
+
+
+1: Iteration
+- Iterate over DS with recursion
+- sometimes useful
+
+- make recursive call on remaining inputs
+- passing in next node, or increment some index
+
+
+WHEN
+- print linked list in reverse
+- factorial
+- for loop-s
+
+ADV: simpler code
+
+2: Breaking into Subproblems
+- classic recursion
+- Towers of Hanoi
+- Fibonacci
+
+- almost all fall into this
+- use it when you can see the subproblem
+
+3: Selection
+- finding all valid combinations
+- select a set of elements
+
+- brute force = find and validate every combination
+- optimize = validate as we go / backtrack
+
+- Knapsack
+- word break
+- phonespell
+- n queens
+
+- filter out combinations prematurely
+- conditional branches (exclude, include)
+
+4: Ordering
+- order matters (permutations)
+- consider different orderings
+
+- brute force = find all permutation, validate
+
+- find all permutations
+- find all n-digits number, sum to something
+- word square ( a matrix of characters ) (ith row = ith column)
+
+- might iterate over a set
+- while iteration do more recursive calls
+
+5: DnC
+(subproblem, how to reduce problem input by size 1 and get solution)
+(DnC, how to split input into two halves)
+
+- searching, sorting, trees
+- spliting problems into halves
+
+- DFS
+- Mergesort
+- Generate unique BST for items (depend on order of insert)
+
+6: DFS
+- trees, graphs
+- other recursive problems as well
+
+- search tree
+- probability of knight remain on chessboard
+- knight's tour
+
+- backtracking

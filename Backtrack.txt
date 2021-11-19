@@ -1,0 +1,125 @@
+BACKTRACKING
+https://www.youtube.com/watch?v=Zq4upTEaQyM
+
+WHEN:
+- exhaustive words
+- generate ALL, compute ALL
+- exhaustion on a decision space
+- BUT they could be exponential in time, might be smarter ways
+
+BACKTRACKING: DFS
+- choose a path
+- does not work out
+- go back up
+- choose another path
+- and so on
+
+(Recursion: sending compact little units, to explore on each level
+little minions spawning more little minions)
+
+- using recursion
+- express decision space
+- express possibilities
+
+1: make Choices (decision space)
+2: Constraints on Choices (restricted decision)
+3: converge towards Goal (do something)
+
+Choice - Constraint - Goal
+
+-------
+1: what Choice are we making at each step?
+on what Decision Space are we making Choices
+
+ex Sudoku: fill cell by making choices
+key choice= made on a cell
+cell has row, column
+pass in row and column to solve function
+
+key choice = made on a decision space
+
+1.0.1: Map out Decision Space
+- Zooming from out to in
+- What is the core/fundamental Choice at the lowest level
+
+1.1: Reduce Decision Space
+- decision space: locations/points at which Choices are made
+- compartmentalize
+- into subproblems
+- break it down, deconstruct
+
+ex Sudoku: solve row by row
+
+1.1.1: Zooming in on Decision Space ~ function args
+What are the zooming in steps?
+
+ex Sudoku: choose row, choose column
+
+
+1.2: Express Decision Space . . . actual Choices
+what are the possible partial "solutions"
+
+ex Sudoku: 0-9
+
+- express the decision space
+
+ex Sudoku: loop over 0-9
+
+1.3: How to place an item? How to make that choice?
+
+ex Sudoku: board[row][column]
+
+-------
+2: Express Constraints
+How do we validate our Choice?
+
+ex Sudoku: row, column, subgrid
+does placing this number, break any of those?
+
+2.1: Recurse on a valid choice
+- recurse becaause this is a partial choice
+- want to map out all choices
+- pass this decided value down the line
+
+2.2: Recurse to next choice to make
+- fanning out
+- function receives a state, based on that state, does operations
+- makes other choices
+- fan out even more
+- until hit base case
+
+
+
+---------
+3: Goal
+We want to reach our base cases
+
+3.1: What are the base cases?
+- edge cases / out of bounds
+- finished all the fanning out (for this branch)
+
+ex Sudoku: reach end of row, reached end of grid
+
+--------- 
+4: Finishing Up
+We want to build up our solution
+
+4.1: Ejecting undesirable decisions
+- remove it
+
+ex Sudoku: cancel the palcement of number
+
+4.2: Each call has a goal
+
+ex Sudoku: is the Sudoku solvable given placement just did
+
+
+FLOW:
+1: craft Function based on Choices (larger ones) and Variables
+1.1: Subproblem down
+2: craft Decision Space 
+3: adhere to Constraints
+4: converge to Base Case
+5: undo Decisions after explored them
+
+6: Explore and Undo
