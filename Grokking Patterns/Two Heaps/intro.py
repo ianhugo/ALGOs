@@ -31,6 +31,7 @@ Approaches
 3. Closest Intervals
 - idea: want max end to be matched with a smallest max start
 - push all into max heap based on ending
+- push all into max heap based on starting
 - pop first off, pop off start until find greater than or equal to
 - repeat
 

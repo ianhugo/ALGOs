@@ -107,7 +107,7 @@ We want to build up our solution
 4.1: Ejecting undesirable decisions
 - remove it
 
-ex Sudoku: cancel the palcement of number
+ex Sudoku: cancel the placement of number
 
 4.2: Each call has a goal
 

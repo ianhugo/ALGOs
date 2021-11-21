@@ -129,10 +129,10 @@ if not base case, spawn more minions
 then when find base case, recurse backwards
 
 Observation 18.1 Recursion 2:
-What is done to pre-process? What to check? What action to take?
+What is done to pre-process? What to check? What action to take? Base cases?
 What the next locations to check are? What recursive calls?
 What is passed down? What values? What containers? 
-How do recursive calls relate? One after another? Take stat measure of results? 
+How do recursive calls relate? One after another? Take stat measure of results? Compute?
 
 Observation 19 Heaps in Python:
 - python heapq is a minheap
@@ -153,3 +153,8 @@ Observation 22 Subset pattern:
 - apply changes based on condition
 - apply different types of changes
 - apply each change to all last states
+
+Observation 23:
+do try/except
+don't expect users not to mess things up (input validation)
+simplify, generalize, scalable

@@ -27,6 +27,16 @@ Approaches:
 - call recursively
 - reset after
 
+3. Unique Top Sort
+- one source at any time
+- check if hashed is right length
+- check if next item is exactly the next in target
+
+4. Reversed Top Sort (minimum height tree)
+- locate leaf nodes: no outgoing edges
+- add new leafs to queue
+- keep going until 1 or 2 nodes left
+
 NOTE: depending on question, note stopping early conditions
 - unique reconstruction
     - more than one source = more than one way to construct

@@ -24,7 +24,8 @@ Approaches:
 3. Finding all paths that fulfill requirement
 - pre-processing:
     - check if leaf
-    - from received current path list, add curr_node, check if meet conditions
+    - from received current path list, add curr_node
+    - check all paths ending here, if meet conditions
     - if so, append to results
 - pass down:
     - check left

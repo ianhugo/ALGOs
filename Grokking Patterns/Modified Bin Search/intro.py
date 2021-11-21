@@ -42,7 +42,7 @@ BASIC:
 - then call search on both sides
 
 5 Rotated Array
-- calculate middle index
+- calculate middle index 
 - arr[start] <= arr[middle] -> ascending sorted
 - search the side which might have our key
 - if duplicates: do skipping

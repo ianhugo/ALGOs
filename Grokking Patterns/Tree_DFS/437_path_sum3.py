@@ -39,23 +39,23 @@ def count_paths(root, S):
 
 def count_paths_recur(curr, S, curr_path):
     #reached leaf
-    if curr is None:
-        return 0
+  if curr is None:
+      return 0
 
-    curr_path.append(curr.val)
-    path_count, path_sum = 0, 0
+  curr_path.append(curr.val)
+  path_count, path_sum = 0, 0
 
-    for i in range(len(curr_path)-1, -1, -1):
-        path_sum += curr_path[i]
-        if path_sum == S:
-            path_count += 1
+  for i in range(len(curr_path)-1, -1, -1):
+      path_sum += curr_path[i]
+      if path_sum == S:
+          path_count += 1
 
-    path_count += count_paths_recur(curr.left, S, curr_path)
-    path_count += count_paths_recur(curr.left, S, curr_path)
+  path_count += count_paths_recur(curr.left, S, curr_path)
+  path_count += count_paths_recur(curr.left, S, curr_path)
 
-    del curr_path[-1]
+  del curr_path[-1]
 
-    return path_count
+  return path_count
 
 
 """MY DRAFT"""

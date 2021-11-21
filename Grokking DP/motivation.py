@@ -18,4 +18,29 @@ the DP difference
 - store value before return
 - be careful of out of bounds referencing
 - or define it beforehand
+
+Top-down Memoization:
+- recursively solve smalelr sub-problems
+- cache result
+
+Bottom-up Tabulation:
+- not recursion
+- typically, fill out n-dimensional table
+
+1. Start with Brute Force
+2. Optimize with Memoization/Tabulation techniques
+
+
+Observation 1:
+- start with brute force
+- optimize with memoization/tabulation
+- check if result
+- store after result
+
+Observation 2:
+- what to store in the dp table?
+- wider scoping parameters
+- ask: what variables are changing
+- the smallest choice: include not to include
+- can be baked into the solution 
 """
