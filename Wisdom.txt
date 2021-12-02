@@ -158,3 +158,33 @@ Observation 23:
 do try/except
 don't expect users not to mess things up (input validation)
 simplify, generalize, scalable
+
+Observation 24: (DP Target Sum)
+- when recognize pattern
+- but want to implement hacky, complicated scheme
+- try to math it out a bit first
+- see if can convert the question to a familiar form
+
+Observation 25: DP
+- overlapping subproblems, optimal substructure
+- means need to consider all combinations
+- but check if already computed
+- and store after computing
+- and store a running optimized solution/value (sometimes)
+
+Observation 26: DP Top-Down
+- start with the whole problem
+- with recursion
+- do DFS on one branch all the way
+- store solutions
+
+Observation 27: DP Bottom-Up
+- start with smallest version of problem
+- same goal, but with less "candidates"
+- keep expanding until have full list of candidates
+
+Observation 28: DP table
+- always a good anchor 
+- separate into at least two ways of slicing
+- (two strings, start-end, weight-object, attribute1-attribute2)
+- (but is not to all DP problems, for example fib patterns)

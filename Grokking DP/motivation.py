@@ -42,5 +42,7 @@ Observation 2:
 - wider scoping parameters
 - ask: what variables are changing
 - the smallest choice: include not to include
-- can be baked into the solution 
+- can be baked into the solution
+
+
 """
