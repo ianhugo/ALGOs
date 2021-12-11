@@ -28,8 +28,9 @@ B: list all projects from A, choose project with max profit
     - want project with smallest cap requirement
 2. iterate through min-heap
     - filter projects, what we can afford
-    - insert those profit-projects put into max-heap
+    - insert those profit-projects put into new max-heap
 3. select top project of max-heap
+4. repeat
 """
 
 """

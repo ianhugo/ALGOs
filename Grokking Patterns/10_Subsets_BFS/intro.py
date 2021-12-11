@@ -13,7 +13,7 @@ Idea:
 
 Approaches:
 
------------------------
+----------------------------------------------
 1. All Subsets (78)
 - copy all, do action
 - append to previous (what was copied)
@@ -56,7 +56,9 @@ Approaches:
 - do at each position, slice into two again
 
 
------------------------
+----------------------------------------------
+
+
 Observation 20 Subset pattern:
 - take note of what choice needs to be made at each level
 - permutation = place at each position . . .

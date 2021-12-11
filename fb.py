@@ -150,6 +150,115 @@ def brute_solve(D, R):
 
 
 
+###################################
+
+
+# Description
+# Given an array of integers, find any one local minimum from the array. A local minimum is defined as an integer in the array that is less than or equal to its neighbors.
+
+# [5, 9, 7, 10, 12]
+
+
+"""
+GIVEN: array of ints
+WANT: a local minimum
+- arr[i] <= arr[i-1] and arr[i]<= arr[i+1]
+
+
+"""
+
+def local_min(arr):
+    
+    res = None
+    n = len(arr)
+    
+    for i in range(0, n):
+        
+        if i == 0:
+            if arr[0] <= arr[1]:
+                return res
+        if i== (n-1)
+            if arr[-1] <= arr[-2]:
+                return res
+        
+        if arr[i] <= arr[i-1] and arr[i]<= arr[i+1]:
+            res = arr[i]
+            return res
+        
+    
+    return res
+
+
+def local_min_recur(arr, low, high, n):  #[5, 9, 7, 10, 12]          #[5, 9, 10, 11, 12]
+    
+    mid = low + (high - low)//2
+    
+    #edge case
+    if (mid == 0 and arr[mid] <= arr[mid+1]) or (mid == n-1 and arr[mid] <= arr[mid-1]):
+        return mid
+    #check
+    elif(arr[mid-1] >= arr[mid] and arr[mid+1] >= arr[mid]):
+        return mid
+    #right halve
+    elif (arr[mid+1] <= arr[mid])
+        return local_min_recur(arr, mid+1, high, n)
+    #left halve
+    else:    #arr[mid-1] < arr[mid]
+        return local_min_recur(arr, low, mid-1, n)        #low = 0, 1
+    
+    
+    
+    
+
+    
+
+    
+#     Description
+# Given an integer array and an integer number k. Return the k-th largest element in the array.
+
+# Examples:
+# array = [5, -3, 9, 1]
+# * k = 0 => return: 9
+# * k = 1 => return: 5
+# * k = 3 => return: -3
+
+
+"""
+Given: int array, k
+WANT: the k-th largest, sorted ascneding k-th
+
+NAIVE: sort -> n lg n, sorted[k]
+
+heap
+
+"""
+
+
+import heapq
+
+def find_kth(arr, k):
+    
+    #maintain heap of size k
+    #heap.pop()
+    #heap.add()
+    
+    n = len(arr)
+    heap = heapq() #default min
+    
+    for i in range(n):        #O(n)
+        if arr[i] >= heap[0]:    #O(lg k)
+            heap.add(arr[i])    #heapifies
+            while len(heap) > (k+1):
+                heap.pop()    #heapifies
+    
+    return heap[0]
+        
+        
+    [-3, -3, -3, -3] [5, -3, -3, 9]
+    
+    #[5, -3, -3, 9], k= 2
+    
+    
 
 
     

@@ -45,7 +45,7 @@ BASIC:
 
 
 -----------------------
-4. Bitonic Maximum
+4. Bitonic Maximum (find peak) (ascending, then descending)
 - search both sides
 - if arr[middle] > arr[middle + 1]
     - descending
@@ -76,6 +76,8 @@ BASIC:
 
 -----------------------
 6. Find Rotated Minimum
+- find middle
+- compare middle to start, end (see which part to search)
 - inflection point
 - as it is usually ascending order
 - where an element is smaller than its previous index

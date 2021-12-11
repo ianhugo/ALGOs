@@ -188,3 +188,9 @@ Observation 28: DP table
 - separate into at least two ways of slicing
 - (two strings, start-end, weight-object, attribute1-attribute2)
 - (but is not to all DP problems, for example fib patterns)
+
+Observation 29: stacks
+- like building a cake
+- partial layers on top (227_basic_calc)
+- might want to swap out a layer (31_next_permute)
+- queue or stack can store a partial state, then wiped as well (1762_buildings)
