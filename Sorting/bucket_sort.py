@@ -24,16 +24,17 @@ def bucketSort(arr):
     
     n = len(arr)
     m = max_val - min_val +1
-    num = int(m/n +1)
+    num = int(m/n +1)   #deciding number of buckets
 
     buckets = []
 
-    for i in range(num):
+    for i in range(num):    #appending arrays, for the total bucket number
         buckets.append([])
     
     for j in range(n):
-        index = int((arr[j]-min_val)/m)
-        buckets[index].append(arr[j])
+        index = int((arr[j]-min_val)/m) #this determined number of buckets
+                                        #now use to determine bucket number
+        buckets[index].append(arr[j])   #put in that bucket
     
     for bucket in buckets:
         if bucket != []:

@@ -6,6 +6,13 @@ w = max number of nodes on any level
 
 Approaches:
 
+using a queue to traverse
+add root, take len, loop based on len
+
+variations:
+appending it left or right
+processing the items on queue befor einserting
+
 ----------------------------------------------
 1. Traversal Order
 - normal BFS with queue

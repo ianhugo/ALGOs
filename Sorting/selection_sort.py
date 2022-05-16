@@ -14,6 +14,9 @@ have to iterate whole subarray to ensure it is minimum
 	4. iterate through, find the minimum
 3. switch pointer1 and index_k
 4. increment index_k
+
+iterate two pointers
+select the minimum, dump it into the partition each time
 """
 
 def selectionSort(arr):

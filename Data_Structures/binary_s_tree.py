@@ -2,11 +2,14 @@
 
 Traversals
 
-Inorder: left, root, right
+Inorder: left, root, right (sorted)
+
+(recursion, but when record)
 Preorder: Root, left, right
 Postorder: left, right, root
 Vread-First or level Order Traversal: increasing sequence
 
+sorted array to bst = find middles on each side, make them the nodes
 """
 
 

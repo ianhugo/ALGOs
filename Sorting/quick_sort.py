@@ -21,6 +21,18 @@ Choosing pivot: (Median of Three)
 3. Use as pivot
 
 in this implementation: only sweep from left is ok
+
+
+(Merge Sort and Quick Sort are related??
+Merge Sort = break things down to the bottom
+                compare and form sorted littles
+                combine into bigger sorted
+Quick Sort = choose pivot
+                use pivot to semi-sort two halves
+                keep going
+Quick = top-down, Merge = bottom-up
+similarity: sorting two halves
+)
 """
 def partition(arr, low, high):
     i = (low - 1)

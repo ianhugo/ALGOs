@@ -6,6 +6,8 @@ use Recursion with DFS
 
 
 Approaches:
+preprocessing, checking, processing, calling all (pass down?), post-processing
+(count all cases)
 
 ----------------------------------------------
 1. Root to Leaf searches:

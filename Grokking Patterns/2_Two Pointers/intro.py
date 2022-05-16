@@ -3,6 +3,7 @@ When:
 - sorted arrays/ linked list
 - find set of elements, with constraints
 - set = pair, trip, subarray
+- identify two members
 
 Sample:
 given sorted array, find a pair, which sum equal to target
@@ -53,7 +54,7 @@ Two-Poitner Strategy:
 
 -----------------------
 
-5. Find continuous subarray with product less than target
+5. Find continuous subarray with product less than target (713)
 - iterate through
 - when hit or larger than product
 - shrink until just smaller
@@ -63,7 +64,8 @@ Two-Poitner Strategy:
 -----------------------
 
 6. Target Quad Sum (4 sum)
-- for loops to choose all pairs
+- for loops to choose each
+- for each, choose another to make a pair
 - then for each pair do 2sum
 
 

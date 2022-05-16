@@ -38,7 +38,7 @@ def find_first_k_missing_positive(nums, k):
     for i in range(n):  #iterate
         if len(missingNumbers) < k: #while still need more
             if nums[i] != i + 1:    #is this index matching
-                missingNumbers.append(i + 1)    #if not then append, i+1
+                missingNumbers.append(i + 1)    #if not then append the index, i+1
                 extraNumbers.add(nums[i])       #add to extranumbers
     
     #by now extra numbers have all out of range ones, as well as negatives

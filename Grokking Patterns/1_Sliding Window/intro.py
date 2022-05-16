@@ -5,6 +5,7 @@ When:
     - or sublists
 - of a given size
 - or want some kind of subarray
+(some characteristic)
 
 Inefficiency source:
 - overlapping of two subarrays

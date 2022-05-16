@@ -1,5 +1,6 @@
 """
 Given: arr of arrs intervals
+(but individual smaller arrays are sorted)
 Want: intervals which are not scheduled for all members of arr
 
 Strategy:
@@ -56,6 +57,7 @@ class EmployeeInterval:
         self.interval = interval  # interval representing employee's working hours
         self.employeeIndex = employeeIndex #index of employee in big list
         self.intervalIndex = intervalIndex  # current idx of interval in employee's
+        #keep so that, can tell easier if reached end of employee schedule (when comparing, when need to add)
 
     def __lt__(self, other):
         # min heap based on meeting.end

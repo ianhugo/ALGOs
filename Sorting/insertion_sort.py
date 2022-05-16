@@ -7,6 +7,9 @@ Note: best case sorted array = O(n) (does not enter while loop)
 1. Work left to right of array
 2. At each point, loop left, if find an item of larger value, switch places
 3. Keep moving forward
+
+two pointers, for each new encountered element
+try to put it in its order in the partition
 """
 
 def insertionSort(arr):

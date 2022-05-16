@@ -167,7 +167,7 @@ Observation 24: (DP Target Sum)
 
 Observation 25: DP
 - overlapping subproblems, optimal substructure
-- means need to consider all combinations
+- means need to consider all combinations (all possible, but cut in a certain way)
 - but check if already computed
 - and store after computing
 - and store a running optimized solution/value (sometimes)

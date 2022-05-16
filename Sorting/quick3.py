@@ -7,6 +7,9 @@ def swap (A, i, j):
  
  
 # Partition routine using the Dutch national flag algorithm
+# three pointers: start, mid, end
+# end goal: start, end = denote the mid range
+# end state: mid pointer has passed end
 def partition(A, start, end):
  
     mid = start

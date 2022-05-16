@@ -1,0 +1,23 @@
+
+how many resources does the algo require?
+input size: number of itemms or bits
+running time: number of primitive operations executed
+1: assign time constant to each line
+2: determine number of times (iterations) the lines runs
+3: total running time = (cost) * iterations
+time:
+measure by number of writes and reads
+think about the constant factors
+
+Merge Sort 
+- fastest
+- but need more space
+- good for large
+
+Quick Sort
+- Faster when small
+- need less space
+
+Heap Sort
+- 2 write, 2 read per sort
+- slowest

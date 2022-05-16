@@ -18,7 +18,7 @@ class ITEM:
         self.char1 = char1
         self.char2 = char2
     
-    def __cmp__(self, other)
+    def __cmp__(self, other):
         if hasattr(other, "getkey"):
             return self.getkey().__cmp__(other.getkey())
 

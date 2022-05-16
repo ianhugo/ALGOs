@@ -45,7 +45,7 @@ def count_paths_recur(curr, S, curr_path):
   curr_path.append(curr.val)
   path_count, path_sum = 0, 0
 
-  for i in range(len(curr_path)-1, -1, -1):
+  for i in range(len(curr_path)-1, -1, -1): #go backwards
       path_sum += curr_path[i]
       if path_sum == S:
           path_count += 1

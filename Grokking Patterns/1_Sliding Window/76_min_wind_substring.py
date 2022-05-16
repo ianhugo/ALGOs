@@ -53,6 +53,9 @@ def find_substring(str1, pattern):
             #shrink it
             left_char = str1[wind_start]
             wind_start +=1
+            #all chars must be 0 or -ve at first
+            #if at zero, then matched change
+            #that means breaks outer condition
             if left_char in char_freq:
                 if char_freq[left_char] == 0:
                     matched -=1

@@ -19,6 +19,15 @@ def find_subarr(arr, target):
     """
     O(n) sliding window
     O(n^2) creating subarray
+
+    strategy:
+    1: target with sliding window
+    multiply and enlarge a product var
+    when over target, shrink, divide product
+    2: add with two pointers
+    (this happens at the end of each main loop, never skipped)
+    with new window, go from right to left
+    add most right then first (adds all subarrays)
     """
     result = []
     product = 1

@@ -21,6 +21,13 @@ sort the subarray -> O n lg n
 
 LEARNED:
 - exclude numbers larger than range
+
+wrong numbers: either left in the hole, or put to the right side
+they will be changed around
+the editing moves forwards and backwards, 
+depending on the value at the inspected index
+finally, when looped through find the first positive that is missing
+
 """
 
 """

@@ -60,6 +60,7 @@ def find_duplicate(arr):
         cycleLength += 1
 
     return find_start(arr, cycleLength)
+    #didn't memorize index, need to find that index again
 
 def find_start(arr, cycleLength):
     pointer1, pointer2 = arr[0], arr[0]
