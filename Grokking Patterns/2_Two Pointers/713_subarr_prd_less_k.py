@@ -49,6 +49,7 @@ def find_subarr(arr, target):
             result.append(list(temp_list))
             #at end of iter, have added the whole array from right to left
             #thus singles, and multiples included
+            #this avoids duplicate subarrays, because this loop enters at every iter
     
     return result
 

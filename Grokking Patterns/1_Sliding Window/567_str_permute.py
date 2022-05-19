@@ -47,8 +47,8 @@ def find_permute(str1, pattern):
                 matched +=1
 
         #stopping condition
-        if matched == len(char_freq):
-            return True
+        if matched == len(char_freq): #assume can check length of dictionary, 
+            return True                 #matched number = number of characters matched (not freq of each char)
 
         #if non matched characters, window keeps expanding
         #but will hit limit

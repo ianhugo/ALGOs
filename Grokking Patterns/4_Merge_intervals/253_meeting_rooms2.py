@@ -73,11 +73,14 @@ def min_meet_rm(meetings):
         #removing meetings by start time
         #while there are meetings
         #remove meetings with end times before this meeting's start
+        #pre-state, target-state, post-state
         while (len(minHeap)> 0 and meeting.start >= minHeap[0].end):
             heappop(minHeap)
         
         #add to min heap
         heappush(minHeap, meeting)
+        #isolate meetings that have not ended, when this meeting starts
+
 
         #tracking
         minRooms = max(minRooms, len(minHeap))

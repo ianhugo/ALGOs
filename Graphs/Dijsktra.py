@@ -36,9 +36,9 @@ class Edge:
         self.cost = None
 
 class Node:
-    def __init__(self):
-        self.id = None
-        self.value = None
+    def __init__(self, id, value):
+        self.id = id
+        self.value = value
 
 #adj list
 #assumes with node objects, the value, is initialized to current lowest

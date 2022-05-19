@@ -30,6 +30,7 @@ def find_missing(nums):
     while i < n:
         j = nums[i]
         #within range, and number not in place
+        #places or does not place 1 each time
         if nums[i] < n and nums[i] != nums[j]:
             nums[i], nums[j] = nums[j], nums[i]  # swap
         else: #skip if beyond range, catch later

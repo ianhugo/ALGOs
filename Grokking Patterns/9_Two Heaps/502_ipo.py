@@ -42,6 +42,14 @@ k = number of projects select
 Space:
 O(n) constant * number of heaps of size n max
 
+
+FIXED CONSTRAINTS:
+number of projects
+
+BEHAVIOR:
+initial capital, just an entrance check
+keeps it
+add profit to it, to qualify for next
 """
 from heapq import *
 
@@ -60,11 +68,14 @@ def find_max_cap(capital, profits, num_proj, initial):
         #while non-empty, can afford the top
         # each time initialize a new prof heap
         #but we would want to keep the cap heap all the time
+        #find all projects we can afford right now
+        #push them all to max heap
         while min_cap_heap and min_cap_heap[0][0] <= available:
             capital, i = heappop(min_cap_heap)
             heappush(max_prof_heap, (-profits[i], i))
         #now all affordable is in max_prof_heap
 
+        #if can't afford any, done
         if not max_prof_heap:
             break
         

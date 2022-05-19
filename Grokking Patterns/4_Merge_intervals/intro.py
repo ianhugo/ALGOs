@@ -53,6 +53,7 @@ end = min(a.end, b.end)
 - dequeue, see if end time before next start time
 - if so, found interval
 - insert next interval for dequeued id
+(add one from each list, each time, then evaluate)
 
 
 """

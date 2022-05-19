@@ -26,14 +26,14 @@ Approaches:
 - while loop, with pointer i
 - at i, arr[i] = j
 - check if arr[i] == arr[j] (do they match) (match = in right place)
-- if not, switch, now arr[i] = j, is at correct position j
-- now we have a new number at our position, do again
-- if yes, then we have placed the current one, can move to next 
+    - if not, switch, now value orginially at i (j), is at correct position j
+    - now we have a new number at our position, do again
+    - if yes, then we have placed the current one, can move to next 
 O(n)
 
 
 -----------------------
-1. Cyclic Sort 1 (n+1 range, n slots)
+1. Cyclic Sort 1 (n+1 range, n slots) (missing/dup)
 - cyclic sort, but move on if current is out of range
 - (will go forwards and backwards)
 - missing index will have the larger number

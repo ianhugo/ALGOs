@@ -51,7 +51,7 @@ def count_paths_recur(curr, S, curr_path):
           path_count += 1
 
   path_count += count_paths_recur(curr.left, S, curr_path)
-  path_count += count_paths_recur(curr.left, S, curr_path)
+  path_count += count_paths_recur(curr.right, S, curr_path)
 
   del curr_path[-1]
 
