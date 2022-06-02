@@ -15,7 +15,7 @@ preprocessing, checking, processing, calling all (pass down?), post-processing
 
 
 -----------------------
-2. Finding Specific Sequence
+2. Finding Specific Sequence (112)
 - pre-processing: 
     - check if leaf
     - check if exceed length
@@ -28,7 +28,7 @@ preprocessing, checking, processing, calling all (pass down?), post-processing
 
 
 -----------------------
-3. Finding all paths that fulfill requirement
+3. Finding all paths that fulfill requirement (113, 437)
 - pre-processing:
     - check if leaf
     - from received current path list, add curr_node

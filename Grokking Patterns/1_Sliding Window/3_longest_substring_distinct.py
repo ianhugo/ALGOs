@@ -34,11 +34,17 @@ def distinct_substring(str1):
         
         char_index[right_char] = window_end
 
-        max_lent = max(max_lent, window_end - wind_start +1)
+        max_lent = max(max_len, window_end - wind_start +1)
     
     return max_lent
 
 
 
 """
-This problem follows the Sliding Window pattern, and we can use a similar dynamic sliding window strategy as discussed in Longest Substring with K Distinct Characters. We can use a HashMap to remember the last index of each character we have processed. Whenever we get a duplicate character, we will shrink our sliding window to ensure that we always have distinct characters in the sliding window."""
+This problem follows the Sliding Window pattern, 
+and we can use a similar dynamic sliding window strategy 
+as discussed in Longest Substring with K Distinct Characters. 
+We can use a HashMap to remember the last index of each character 
+we have processed. Whenever we get a duplicate character, 
+we will shrink our sliding window to ensure that we always have 
+distinct characters in the sliding window."""

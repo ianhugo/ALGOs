@@ -25,7 +25,7 @@ Approaches
 
 
 -----------------------
-2. Constraint Optimization
+2. Constraint Optimization (502)
 - push all into max/min heap based on one attribute, with constraint
 - continuously pop, put into max/min heap sorted on another attribute
 - select optimized option (the top)
@@ -33,7 +33,7 @@ Approaches
 
 
 -----------------------
-3. Closest Intervals
+3. Closest Intervals (436)
 - idea: want max end to be matched with a smallest max start
 - push all into max heap based on ending
 - push all into max heap based on starting
